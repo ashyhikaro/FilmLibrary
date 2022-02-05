@@ -1,3 +1,4 @@
+import checkFavorite from "./checkFavorite.js";
 import { getStorage, setStorage, toggleStorage } from "./serviceStorage.js";
 
 export const wraper = document.querySelector('.content');
@@ -41,6 +42,8 @@ export const renderCard = (obj) => {
             element.classList.toggle('toggleDisActive');
             if (element.textContent == 'Like') element.textContent = 'Dislike';
             else element.textContent = 'Like';
+
+            checkFavorite();
         });
     });
 };
