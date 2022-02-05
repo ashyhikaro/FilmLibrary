@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    color: white;
+}
+
+body {
+    background-color: #292929;
+    padding: 0 50px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+}
+
+.item_content {
+    width: 600px;
+    height: 300px;
+    overflow: scroll;
+    padding: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.item_content > div > p {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.item_content::-webkit-scrollbar {
+    width: 0;
+}
+
+.item_img_container {
+    display: flex;
+    justify-content: center;
+    height: 295px;
+}
+
+.item_m {
+    margin: 0;
+}
+
+.searcher {
+    width: 15%;
+}
+
+.control {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+input {
+    width: 95%;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 5%;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.btn {
+    width: 48%;
+    height: 32px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    color: white;
+}
+
+.fav {
+    background-color: #e32636;
+}
+
+.clear {
+    background-color: #848482;
+}
+
+.clearFavoriteBtn {
+    background-color: #303030;
+}
+
+.fav:hover, .like:hover, .clear:hover, .dislike:hover, .clearFavoriteBtn:hover {
+    cursor: pointer;
+    opacity: 0.76;
+}
+
+.item_btn {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 70px;
+    height: 28px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.like {
+    background-color: #e32636;
+}
+
+.dislike {
+    background-color: #848482;
+}
+
+.control {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggleActive {
+    background-color: #848482;
+}
+
+.toggleDisActive {
+    background-color: #e32636;
+}
